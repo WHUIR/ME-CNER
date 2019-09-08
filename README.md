@@ -27,8 +27,7 @@ If you use this code in your work, please kindly cite our work:
 	
 
 ## Dataset
-We use a standard Weibo NER dataset provided by [Peng and Dredze, 2015](http://aclweb
-.org/anthology/D/D15/D15-1064.pdf),
+We use a standard Weibo NER dataset provided by [Peng and Dredze, 2015](http://aclweb.org/anthology/D/D15/D15-1064.pdf),
 and a formal MSRA News dataset provided by [Levow, 2006](https://www.aclweb.org/anthology/W06-0115)
 
 ## Pretrained Embeddings
