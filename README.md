@@ -1,8 +1,6 @@
 # ME-CNER
 Code for CIKM 2019 paper "Exploiting Multiple Embeddings for Chinese Named Entity Recognition".
 
-**We are continuing working on the code to improve its readability and will release it before the conference.**
-
 ## Citation
 If you use this code in your work, please kindly cite our work:
 ```bibtex
@@ -21,32 +19,28 @@ If you use this code in your work, please kindly cite our work:
 }
 ```
 
-Requirement
-======
+## Requirement
 	Python: 3.6  
 	Keras: 2.2.2
 	Keras-contrib: 2.0.8
 	jieba: 0.39
 	
 
-Dataset
-======
+## Dataset
 We use a standard Weibo NER dataset provided by [Peng and Dredze, 2015](http://aclweb
 .org/anthology/D/D15/D15-1064.pdf),
 and a formal MSRA News dataset provided by [Levow, 2006](https://www.aclweb.org/anthology/W06-0115)
 
-Pretrained Embeddings
-====
+## Pretrained Embeddings
 The pretrained character and word embeddings are provided by [Tencent AI Lab](https://ai.tencent.com/ailab/nlp/embedding.html). Download it [here](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz).
 
 The radical embedding is randomly initialized and fine-tuned during training.
 
-How to Run
-====
+## How to Run
 1. Install all requirements
 ```shell
 pip install keras==2.2.2  # Keras
-pip install git+https://www.github.com/keras-team/keras-contrib.git  # For BiLSTM-CRF tagger
+pip install git+https://www.github.com/keras-team/keras-contrib.git  # For CRF layer
 pip install jieba  # For Chinese words segmentation 
 ```
 
@@ -72,7 +66,7 @@ with_radical:  # input radical embedding or not
   0  # no radical embedding input, only word embedding and char embedding
   1  # with radical embedding
   
-network:
+network:  # for characters
   convgru  # Conv-GRU  
   bilstm 
   cnn 
