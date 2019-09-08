@@ -38,9 +38,9 @@ The radical embedding is randomly initialized and fine-tuned during training.
 ## How to Run
 1. Install all requirements
 ```shell
-pip install keras==2.2.2  # Keras
-pip install git+https://www.github.com/keras-team/keras-contrib.git  # For CRF layer
-pip install jieba  # For Chinese words segmentation 
+pip install keras==2.2.2  # for Keras
+pip install git+https://www.github.com/keras-team/keras-contrib.git  # for CRF layer
+pip install jieba  # for word segmentation 
 ```
 
 2. Download pretrained embeddings
