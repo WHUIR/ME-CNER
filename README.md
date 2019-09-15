@@ -1,5 +1,5 @@
 # ME-CNER
-Code for CIKM 2019 paper "Exploiting Multiple Embeddings for Chinese Named Entity Recognition".
+Code for CIKM 2019 paper ["Exploiting Multiple Embeddings for Chinese Named Entity Recognition"](https://arxiv.org/abs/1908.10657).
 
 ## Citation
 If you use this code in your work, please kindly cite our work:
