@@ -28,12 +28,12 @@ If you use this code in your work, please kindly cite our work:
 
 ## Dataset
 We use a standard Weibo NER dataset provided by [Peng and Dredze, 2015](http://aclweb.org/anthology/D/D15/D15-1064.pdf),
-and a formal MSRA News dataset provided by [Levow, 2006](https://www.aclweb.org/anthology/W06-0115)
+and a formal MSRA News dataset provided by [Levow, 2006](https://www.aclweb.org/anthology/W06-0115).
 
 ## Pretrained Embeddings
 The pretrained character and word embeddings are provided by [Tencent AI Lab](https://ai.tencent.com/ailab/nlp/embedding.html). Download it [here](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz).
 
-The radical embedding is randomly initialized and fine-tuned during training.
+The radical embedding is randomly initialized.
 
 ## How to Run
 1. Install all requirements
@@ -47,7 +47,7 @@ pip install jieba  # for word segmentation
 Download [Tencent Embeddings](https://ai.tencent.com/ailab/nlp/data/Tencent_AILab_ChineseEmbedding.tar.gz), extract it and put it in `process_data/data_preprocess`.
 
 3. Run the pre-processing code
-```
+```shell
 python concat_data.py
 ```
 
