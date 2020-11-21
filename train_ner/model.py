@@ -196,7 +196,7 @@ def calculate_precision_recall_f1(predict, ground_truth, matrix_shape):
                 match_candidate[0] > 0 or match_candidate[1] > 0):
             match_candidate = (0, 0)
             numerator += 1
-        if predict_label == gt_label and predict_label not in [0, 9]:
+        if predict_label == gt_label and predict_label in [1, 3, 5, 7]:
             match_candidate = (predict_label, gt_label)
         if predict_label != gt_label:
             match_candidate = (0, 0)
